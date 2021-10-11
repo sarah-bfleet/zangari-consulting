@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lato:wght@300;400;700;900&family=Oswald:wght@500&family=Scheherazade+New:wght@400;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,600&family=Didact+Gothic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -100,9 +98,10 @@ html {
 
 body {
   margin: 0 auto;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-family: "Lato", sans-serif;
+  /* font-family: "Didact Gothic", sans-serif;
+  font-family: "Crimson Text", serif;
+  font-family: "Lora", serif; */
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   color: white;
 }
@@ -127,7 +126,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Covered By Your Grace", cursive;
   font-size: 1.625rem;
   letter-spacing: 0.1em;
 }
@@ -151,10 +149,6 @@ img {
   height: auto;
 }
 
-figure img {
-  border: 0.7px solid #4e5a65;
-}
-
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -164,10 +158,9 @@ figure img {
 
 /* HERO AREA */
 
-header {
+/* header {
   display: flex;
-  background-color: #f4f5f5;
-}
+} */
 
 nav {
   font-weight: bold;
@@ -178,7 +171,7 @@ nav {
 }
 
 nav a {
-  color: #283173;
+  color: #000;
 }
 
 nav a:hover {
@@ -192,11 +185,10 @@ nav ul {
 }
 
 nav ul li {
-  text-transform: uppercase;
   margin: 0 15px;
 }
 
-/* .hero {
+.hero {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -209,16 +201,16 @@ nav ul li {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url("../img/pexels-luis-quintero-2774556.jpg") no-repeat;
+  background: url("../img/crowd.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+
   height: 100%;
   z-index: -2;
 }
 
 .hero::after {
-  background-color: #f7f7f7;
+  background-color: #000;
   content: "";
   display: block;
   position: absolute;
@@ -228,47 +220,111 @@ nav ul li {
   height: 100%;
   z-index: -1;
   opacity: 0.7;
-} */
+}
 
 .hero h1 {
-  font-family: "Covered By Your Grace", cursive;
-  font-family: "Oswald", sans-serif;
-  font-family: "Cabin", sans-serif;
-  font-family: "Lato", sans-serif;
-  /* text-transform: uppercase; */
+  /* font-family: "Didact Gothic", sans-serif;
+  font-family: "Crimson Text", serif;
+  font-family: "Lora", serif; */
+  font-family: "Playfair Display", serif;
   margin-top: 0;
 }
 
-.header-btn {
+.btn {
   font-size: 1.25rem;
-  padding: 0.25em 0.75em;
-  border: 2px solid white;
-  border-radius: 4px;
-  color: #283173;
+  padding: 15px 35px;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: black;
   background-color: #fdd923;
   margin-top: 40px;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
-.header-btn:hover {
+.btn:hover {
   cursor: pointer;
   background-color: white;
-  color: #283173;
-  font-weight: bold;
-  border: 2px solid #283173;
+  color: black;
+}
+
+.hero-btn {
+  border: 2.5px solid #fdd923;
 }
 
 .opening-statement {
-  color: #283173;
+  background-color: #fdd923;
+  color: #000;
   padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening-statement h2 {
+  font-size: 55px;
+  font-weight: normal;
+  width: 70%;
+  text-align: center;
 }
 
 .opening-statement p {
   font-size: 26px;
-  background-color: #283173;
-  color: white;
-  padding: 30px;
+}
+
+.opening-statement span {
+  font-style: italic;
+}
+
+.keynote-speaker {
+  display: flex;
+  align-items: center;
+}
+
+.side-one {
+  width: 50%;
+}
+
+.side-two {
+  color: #000;
+  width: 50%;
+  text-align: left;
+}
+
+.side-two h2 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.side-two p {
+  width: 75%;
+}
+
+.p1 {
+  font-size: 35px;
+}
+
+.keynote-btn:hover {
+  cursor: pointer;
+  border: 1.5px solid #fdd923;
+  color: #000;
+}
+
+.company-logos {
+  padding: 30px 0;
+}
+
+.company-logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo2,
+.fa-cc-amex {
+  background-color: gray;
 }
 
 /********************************************
@@ -276,9 +332,8 @@ nav ul li {
 *********************************************/
 
 .about {
-  background-color: #f4f5f5;
   padding: 70px 0;
-  color: #283173;
+  color: #000;
 }
 
 .about .wrapper {
@@ -287,12 +342,11 @@ nav ul li {
 
 .about img {
   border: 2px solid white;
-  box-shadow: -100px -50px #283173;
+  /* box-shadow: -100px -50px #000; */
 }
 
 .about-text {
   text-align: left;
-  margin-right: 50px;
 }
 
 /********************************************
@@ -300,7 +354,7 @@ nav ul li {
 *********************************************/
 
 .speaking {
-  background-color: #283173;
+  background-color: #000;
   padding-bottom: 60px;
 }
 
@@ -313,7 +367,6 @@ nav ul li {
 .speaking p {
   text-align: center;
   font-size: 26px;
-  background-color: #f4f5f5;
   padding: 30px;
   margin: 50px 0 0;
   border-radius: 4px;
@@ -334,7 +387,7 @@ nav ul li {
 .videos-articles {
   height: 400px;
   background-color: #f4f5f5;
-  color: #283173;
+  color: #000;
 }
 
 /********************************************
@@ -342,8 +395,9 @@ nav ul li {
 *********************************************/
 
 footer {
-  background-color: #283173;
+  background-color: #000;
   padding: 50px 0 10px;
+  text-align: center;
 }
 
 footer h3 {
@@ -502,6 +556,7 @@ footer i:hover,
 
   .logo {
     font-family: "Scheherazade New", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 3.5rem;
     margin: 0;
@@ -541,7 +596,7 @@ footer i:hover,
   }
 
   .about-text {
-    margin-left: 15px;
+    margin-left: 60px;
     width: 50%;
   }
 
@@ -550,6 +605,7 @@ footer i:hover,
     padding-bottom: 40px;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .hire,
@@ -579,67 +635,98 @@ footer i:hover,
   }
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 90%;
     margin: 0 auto;
   }
 
   .header-wrapper {
-    padding-top: 0px;
+    padding: 12px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .logo {
     font-size: 30px;
-    padding: 15px;
-    color: #283173;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 40px;
   }
 
   .navbar {
-    margin-left: auto;
-    padding: 15px;
+    margin-right: 40px;
   }
 
   nav ul {
     display: flex;
-    justify-content: flex-end;
   }
 
   nav ul li {
     margin: 0 10px;
   }
 
-  /* .hero::before {
+  .home {
+    margin-right: auto;
+  }
+
+  .hero::before {
     height: 100%;
     background-attachment: fixed;
     background-position: top right;
-  } */
-
-  .hero {
-    height: 100vh;
-    display: flex;
   }
 
+  /* .hero {
+    height: 100vh;
+    display: flex;
+  } */
+  /* 
   .hero-side-one {
-    background-color: #283173;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
   }
 
   .hero-side-two {
-    background: url("../img/pexels-christina-morillo-1181534.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 50%;
-  }
+    color: #fff;
+  }  */
 
   .hero h1 {
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 4.5rem;
+    width: 75%;
+    text-align: left;
+  }
+
+  .hero p {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .hero-content {
+    margin-left: 40px;
+    padding-top: 60px;
+    display: flex;
+  }
+
+  .hero-content-side1 {
+    width: 60%;
+  }
+
+  .hero-content-side2 {
+    width: 40%;
+    align-self: flex-end;
+    text-transform: uppercase;
+  }
+
+  .hero-content-side2 p {
+    font-size: 30px;
+    width: 70%;
+    margin-left: 180px;
+    margin-bottom: 0;
   }
 
   .speaking,
