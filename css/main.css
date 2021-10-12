@@ -254,7 +254,7 @@ nav ul li {
 .opening-statement {
   background-color: #fdd923;
   color: #000;
-  padding: 60px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -262,18 +262,26 @@ nav ul li {
 }
 
 .opening-statement h2 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: normal;
   width: 70%;
   text-align: center;
+  margin-top: 0;
 }
 
 .opening-statement p {
-  font-size: 26px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .opening-statement span {
   font-style: italic;
+}
+
+.opening-statement-btn {
+  margin-top: 20px;
 }
 
 .keynote-speaker {
@@ -295,15 +303,26 @@ nav ul li {
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .side-two p {
   width: 75%;
 }
 
+.side-two h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.side-two ul {
+  list-style-type: disc;
+}
+
 .p1 {
-  font-size: 35px;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .keynote-btn:hover {
@@ -318,12 +337,19 @@ nav ul li {
 
 .company-logo-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.company-logo-list li {
+  margin: 15px 40px;
 }
 
 .logo2,
-.fa-cc-amex {
+.fa-cc-amex,
+.jnj-logo,
+.lvmh-logo {
   background-color: gray;
 }
 
@@ -696,14 +722,9 @@ footer i:hover,
 
   .hero h1 {
     margin-top: 0;
-    font-size: 4.5rem;
+    font-size: 50px;
     width: 75%;
     text-align: left;
-  }
-
-  .hero p {
-    display: inline-block;
-    margin-left: auto;
   }
 
   .hero-content {
@@ -713,20 +734,24 @@ footer i:hover,
   }
 
   .hero-content-side1 {
-    width: 60%;
+    width: 50%;
   }
 
   .hero-content-side2 {
-    width: 40%;
+    width: 50%;
     align-self: flex-end;
     text-transform: uppercase;
   }
 
   .hero-content-side2 p {
-    font-size: 30px;
-    width: 70%;
-    margin-left: 180px;
+    font-size: 35px;
+    font-weight: bold;
     margin-bottom: 0;
+  }
+
+  .hero-content-side2 span {
+    color: #fdd923;
+    font-weight: bolder;
   }
 
   .speaking,
