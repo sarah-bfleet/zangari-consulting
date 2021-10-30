@@ -103,16 +103,16 @@ body {
 }
 
 .coming-soon {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
  height: 100vh;
 }
 
 .coming-soon a {
  font-weight: 700;
  color: #003566;
+}
+
+.lisa-logo {
+ margin-top: 100px;
 }
 
 /* .lisa-logo {
@@ -439,12 +439,21 @@ footer i:hover,
 @media only screen and (min-width: 1200px) {
   
 
-  .wrapper {
+.wrapper {
     max-width: 1300px;
-  }
+}
+
+.coming-soon {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
 
 .lisa-logo {
  width: 700px;
+ margin-top: 0;
 }
 
 .colors2 {
